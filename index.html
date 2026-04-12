@@ -50,37 +50,18 @@
     <title>Evolo</title>
 </head>
 <body>
-    <!-- NAV BAR -->
-   <div class="py-[10px] px-[30px]">
-        <nav class="flex justify-between items-center">
 
-            <a href="#">
-                <img src="./images/logo.svg" alt="Evolo Image" class="h-[80px] w-[80px]">
-            </a>
+    <div class="md:bg-[url('./images/header-background.jpg')] bg-cover bg-none">
+        <!-- NAV BAR -->
+        <div class="py-[20px] px-[50px]">
+            <nav class="flex justify-between items-center">
 
-            <div class="hidden lg:flex md:flex">
-                <ul class="flex text-[#00bfd9] font-raleway font-bold">
-                    <li class="p-[8px]">Home</li>
-                    <li class="p-[8px]">Service</li>
-                    <li class="p-[8px]">Pricing</li>
-                    <li class="p-[8px]">Request</li>
-                    <li class="p-[8px]">About ▼</li>
-                    <li class="p-[8px]">Contact</li>
-                    <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
-                    <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
-                </ul>
-            </div>
+                <a href="#">
+                    <img src="./images/logo.svg" alt="Evolo Image" class="h-[80px] w-[80px]">
+                </a>
 
-            <button id="menuBtn" class="border p-2 rounded-md flex items-center justify-center lg:hidden md:hidden">
-                <img src="./images/ham.svg" class="h-[30px] w-[30px] block transition">
-            </button>
-
-        </nav>
-        <div id="mobileMenu"
-            class="w-full bg-white lg:hidden md:hidden overflow-hidden
-                transition-all duration-500
-                opacity-0 max-h-0 -translate-y-2 pointer-events-none">
-                <ul class="flex-col text-[#00bfd9] font-raleway font-bold">
+                <div class="hidden lg:flex md:flex">
+                    <ul class="flex text-white font-raleway font-bold">
                         <li class="p-[8px]">Home</li>
                         <li class="p-[8px]">Service</li>
                         <li class="p-[8px]">Pricing</li>
@@ -89,23 +70,48 @@
                         <li class="p-[8px]">Contact</li>
                         <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
                         <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
-                </ul>
+                    </ul>
+                </div>
+
+                <button id="menuBtn" class="border p-2 rounded-md flex items-center justify-center lg:hidden md:hidden">
+                    <img src="./images/ham.svg" class="h-[30px] w-[30px] block transition">
+                </button>
+
+            </nav>
+            <div id="mobileMenu"
+                class="w-full bg-white lg:hidden md:hidden overflow-hidden
+                    transition-all duration-500
+                    opacity-0 max-h-0 -translate-y-2 pointer-events-none">
+                    <ul class="flex-col text-[#00bfd9] font-raleway font-bold">
+                            <li class="p-[8px]">Home</li>
+                            <li class="p-[8px]">Service</li>
+                            <li class="p-[8px]">Pricing</li>
+                            <li class="p-[8px]">Request</li>
+                            <li class="p-[8px]">About ▼</li>
+                            <li class="p-[8px]">Contact</li>
+                            <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
+                            <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
+                    </ul>
+            </div>
+        </div> 
+        <!-- HERO SECTION  -->
+        <div class="pt-[60px] flex justify-center gap-[300px] mb-[48px] px-[72px]">
+            <div class="flex-col items-start">
+                <h1 class="m-0 text-[#00bfd9] text-[64px] mb-[8px] font-raleway text-left font-extrabold leading-[70px]">StartUp Landing <span class="text-black">Page<br> Template Free</span></h1>
+                <p class="font-raleway text-[19.2px] mb-[16px] text-[#6c757d]">
+                    Use Evolo free landing page template to promote your business<br>
+                    startup and generate leads for the offered services
+                </p>
+                <button class="bg-[#00bfd9] font-bold text-white font-raleway px-[20px] py-[10px] rounded-[32px]">
+                DISCOVER
+                </button>
+            </div>
+            <div><img alt="teamwork" src="./images/header-teamwork.svg" class="w-[633px] h-[474px]"></div>
         </div>
     </div>
-    <!-- HERO SECTION  -->
-    <div class="pt-[60px] flex justify-center gap-[300px] mb-[48px] px-[72px]">
-        <div class="flex-col items-start">
-            <h1 class="m-0 text-[#00bfd9] text-[64px] mb-[8px] font-raleway text-left font-extrabold leading-[70px]">StartUp Landing <span class="text-black">Page<br> Template Free</span></h1>
-            <p class="font-raleway text-[19.2px] mb-[16px] text-[#6c757d]">
-                Use Evolo free landing page template to promote your business<br>
-                startup and generate leads for the offered services
-            </p>
-            <button class="bg-[#00bfd9] font-bold text-white font-raleway px-[20px] py-[10px] rounded-[32px]">
-              DISCOVER
-            </button>
-        </div>
-        <div><img alt="teamwork" src="./images/header-teamwork.svg" class="w-[633px] h-[474px]"></div>
-    </div>
+
+   
+    
 
     <!-- TRUSTEDBY SECTION -->
     <section id="trustedBy" class="flex-col mb-[40px]">
@@ -301,6 +307,13 @@
         <p class="text-center text-[#6c757d] font-raleway text-[16px] mb-[16px] px-[166.5px] max-w-[1110px] mx-auto">
             This video will show you a case study for one of our <b>Major Customers</b> and will help you understand why your startup needs Evolo in this highly competitive market
         </p>
+    </section>
+
+    <!-- Testimonials SEction -->
+    <section id="Testimonials" class="md:bg-[url('./images/testimonials-background.jpg')] bg-cover bg-none my-[48px] py-[16px]">
+        <div class="flex flex-row justify-center max-w-[1440px] mx-auto">
+            <img src="./images//testimonials-2-men-talking.svg" class="w-[526px] h-[437px]">
+        </div>
     </section>
      
 </body>
