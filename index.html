@@ -3,12 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                    raleway: ['Raleway', 'sans-serif'],
+                }
+            }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
 
+            const btn = document.getElementById("menuBtn");
+            const menu = document.getElementById("mobileMenu");
+
+            let open = false;
+
+            btn.addEventListener("click", () => {
+                open = !open;
+
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("max-h-0");
+                menu.classList.toggle("-translate-y-2");
+                menu.classList.toggle("pointer-events-none");
+
+                menu.classList.toggle("opacity-100");
+                menu.classList.toggle("max-h-96");
+                menu.classList.toggle("translate-y-0");
+                menu.classList.toggle("pointer-events-auto");
+
+                if (open) {
+                    btn.classList.add("border-black");
+                } else {
+                    btn.classList.remove("border-black");
+                }
+            });
+
+        });
+    </script>
+    <meta rel="icon" href="./images/logo.svg">
     <title>Evolo</title>
 </head>
 <body>
-    
+    <!-- NAV BAR -->
+   <div class="py-[10px] px-[30px] fixed top-0 left-0 w-full">
+    <nav class="flex justify-between items-center">
+
+        <a href="#">
+            <img src="./images/logo.svg" alt="Evolo Image" class="h-[80px] w-[80px]">
+        </a>
+
+        <div class="hidden lg:flex md:flex">
+            <ul class="flex text-[#00bfd9] font-raleway font-bold">
+                <li class="p-[8px]">Home</li>
+                <li class="p-[8px]">Service</li>
+                <li class="p-[8px]">Pricing</li>
+                <li class="p-[8px]">Request</li>
+                <li class="p-[8px]">About ▼</li>
+                <li class="p-[8px]">Contact</li>
+                <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
+                <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
+            </ul>
+        </div>
+
+        <button id="menuBtn" class="border p-2 rounded-md flex items-center justify-center lg:hidden md:hidden">
+            <img src="./images/ham.svg" class="h-[30px] w-[30px] block transition">
+        </button>
+
+    </nav>
+    <div id="mobileMenu"
+        class="w-full bg-white lg:hidden md:hidden overflow-hidden
+            transition-all duration-500
+            opacity-0 max-h-0 -translate-y-2 pointer-events-none">
+            <ul class="flex-col text-[#00bfd9] font-raleway font-bold">
+                    <li class="p-[8px]">Home</li>
+                    <li class="p-[8px]">Service</li>
+                    <li class="p-[8px]">Pricing</li>
+                    <li class="p-[8px]">Request</li>
+                    <li class="p-[8px]">About ▼</li>
+                    <li class="p-[8px]">Contact</li>
+                    <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
+                    <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
+            </ul>
+    </div>
+</div>
 </body>
 </html>
