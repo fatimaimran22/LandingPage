@@ -26,6 +26,7 @@ The goal of this project is to:
 
 * HTML5
 * Tailwind CSS
+* JavaScript
 
 ---
 
@@ -43,9 +44,7 @@ The goal of this project is to:
 ```id="9e21fd"
 project-folder/
 │── index.html
-│── assets/
-│   ├── images/
-│   └── icons/
+│── images/
 ```
 
 ---
@@ -58,12 +57,6 @@ Through this project, I learned:
 * Responsive design using Tailwind breakpoints
 * Faster UI development workflow
 * Writing cleaner and scalable frontend code
-
----
-
-## 🏢 About Me
-
-I am currently working as an **Associate Software Engineer (ASE)** at Devsinc, where I am enhancing my frontend and development skills through practical training.
 
 ---
 
