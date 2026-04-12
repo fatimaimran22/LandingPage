@@ -1,7 +1,7 @@
-# 🌐 Evolvo Landing Page Clone
+# 🌐 Evolvo Landing Page Clone (Tailwind CSS)
 
-A responsive **HTML & CSS landing page clone** built as part of my training at **Devsinc**.
-This project focuses on improving front-end fundamentals by replicating a modern UI design.
+A responsive **HTML5 + Tailwind CSS landing page clone** built as part of my training at Devsinc.
+This project focuses on modern UI development using utility-first CSS.
 
 ---
 
@@ -16,34 +16,33 @@ This project focuses on improving front-end fundamentals by replicating a modern
 The goal of this project is to:
 
 * Practice **HTML5 semantic structure**
-* Improve **CSS styling and layout skills**
-* Understand **responsive design techniques**
-* Replicate a real-world landing page for hands-on experience
+* Learn and apply **Tailwind CSS utility-first approach**
+* Build responsive layouts efficiently
+* Replicate a real-world landing page design
 
 ---
 
 ## 🛠️ Tech Stack
 
 * HTML5
-* CSS3 (Flexbox, Grid)
+* Tailwind CSS
 
 ---
 
 ## ✨ Features
 
-* Responsive design (mobile-friendly)
-* Clean and modern UI
-* Structured layout using Flexbox/Grid
-* Reusable components
+* Fully responsive design
+* Modern UI using Tailwind utilities
+* Fast styling without writing custom CSS
+* Clean and maintainable code structure
 
 ---
 
 ## 📂 Folder Structure
 
-```
+```id="9e21fd"
 project-folder/
 │── index.html
-│── style.css
 │── assets/
 │   ├── images/
 │   └── icons/
@@ -55,32 +54,30 @@ project-folder/
 
 Through this project, I learned:
 
-* How to convert a design into code
-* Layout structuring using CSS
-* Handling spacing, alignment, and responsiveness
-* Improving code readability and organization
+* Utility-first styling with Tailwind CSS
+* Responsive design using Tailwind breakpoints
+* Faster UI development workflow
+* Writing cleaner and scalable frontend code
 
 ---
 
 ## 🏢 About Me
 
-I am currently working as an **Associate Software Engineer (ASE)** at **Devsinc**, where I am enhancing my development skills through practical training and real-world projects.
+I am currently working as an **Associate Software Engineer (ASE)** at Devsinc, where I am enhancing my frontend and development skills through practical training.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is a **clone for learning purposes only**.
-All design credits go to the original creators of the Evolvo landing page.
+This project is a **clone created for educational purposes only**.
+All design credits belong to the original creators of the Evolvo landing page.
 
 ---
 
 ## 📬 Contact
 
-If you'd like to connect or collaborate:
-
 * GitHub: https://github.com/fatimaimran22
 
 ---
 
-⭐ *If you like this project, feel free to star the repository!*
+⭐ *Feel free to star the repo if you find it useful!*
