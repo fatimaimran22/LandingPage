@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -52,35 +52,14 @@
 <body>
     <!-- NAV BAR -->
    <div class="py-[10px] px-[30px] fixed top-0 left-0 w-full">
-    <nav class="flex justify-between items-center">
+        <nav class="flex justify-between items-center">
 
-        <a href="#">
-            <img src="./images/logo.svg" alt="Evolo Image" class="h-[80px] w-[80px]">
-        </a>
+            <a href="#">
+                <img src="./images/logo.svg" alt="Evolo Image" class="h-[80px] w-[80px]">
+            </a>
 
-        <div class="hidden lg:flex md:flex">
-            <ul class="flex text-[#00bfd9] font-raleway font-bold">
-                <li class="p-[8px]">Home</li>
-                <li class="p-[8px]">Service</li>
-                <li class="p-[8px]">Pricing</li>
-                <li class="p-[8px]">Request</li>
-                <li class="p-[8px]">About ▼</li>
-                <li class="p-[8px]">Contact</li>
-                <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
-                <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
-            </ul>
-        </div>
-
-        <button id="menuBtn" class="border p-2 rounded-md flex items-center justify-center lg:hidden md:hidden">
-            <img src="./images/ham.svg" class="h-[30px] w-[30px] block transition">
-        </button>
-
-    </nav>
-    <div id="mobileMenu"
-        class="w-full bg-white lg:hidden md:hidden overflow-hidden
-            transition-all duration-500
-            opacity-0 max-h-0 -translate-y-2 pointer-events-none">
-            <ul class="flex-col text-[#00bfd9] font-raleway font-bold">
+            <div class="hidden lg:flex md:flex">
+                <ul class="flex text-[#00bfd9] font-raleway font-bold">
                     <li class="p-[8px]">Home</li>
                     <li class="p-[8px]">Service</li>
                     <li class="p-[8px]">Pricing</li>
@@ -89,8 +68,57 @@
                     <li class="p-[8px]">Contact</li>
                     <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
                     <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
-            </ul>
+                </ul>
+            </div>
+
+            <button id="menuBtn" class="border p-2 rounded-md flex items-center justify-center lg:hidden md:hidden">
+                <img src="./images/ham.svg" class="h-[30px] w-[30px] block transition">
+            </button>
+
+        </nav>
+        <div id="mobileMenu"
+            class="w-full bg-white lg:hidden md:hidden overflow-hidden
+                transition-all duration-500
+                opacity-0 max-h-0 -translate-y-2 pointer-events-none">
+                <ul class="flex-col text-[#00bfd9] font-raleway font-bold">
+                        <li class="p-[8px]">Home</li>
+                        <li class="p-[8px]">Service</li>
+                        <li class="p-[8px]">Pricing</li>
+                        <li class="p-[8px]">Request</li>
+                        <li class="p-[8px]">About ▼</li>
+                        <li class="p-[8px]">Contact</li>
+                        <li class="p-[8px]"><a href="#"><img src="./images/fb.svg" alt="facebook logo" class="w-[23.25px] h-[23.11px]"></a></li> 
+                        <li class="p-[8px]"><a href="#"><img src="./images/google.svg" alt="google plus logo" class="w-[24px] h-[24px]"></a></li>
+                </ul>
+        </div>
     </div>
-</div>
+    <!-- HERO SECTION  -->
+    <div class="pt-[150px] flex justify-between mb-[48px] px-[72px]">
+        <div class="flex-col items-start">
+            <h1 class="m-0 text-[#00bfd9] text-[64px] mb-[8px] font-raleway text-left font-extrabold leading-[70px]">StartUp Landing<br><span class="text-black">Page Template Free</span></h1>
+            <p class="font-raleway text-[19.2px] mb-[16px] text-[#6c757d]">
+                Use Evolo free landing page template to promote your business<br>
+                startup and generate leads for the offered services
+            </p>
+            <button class="bg-[#00bfd9] font-bold text-white font-raleway px-[20px] py-[10px] rounded-[32px]">
+              DISCOVER
+            </button>
+        </div>
+        <div><img alt="teamwork" src="./images/header-teamwork.svg" class="w-[506.391px] h-[474.500px]"></div>
+    </div>
+
+    <!-- TRUSTEDBY SECTION -->
+    <section id="trustedBy" class="flex-col">
+        <div class="flex justify-center text-[24px] font-raleway mb-[24px] text-black font-extrabold"><h1>Trusted By</h1></div>
+        <div class="max-w-[1220px] mx-auto flex justify-between">
+            <img alt="customer-image" src="./images/customer-logo-1.png" class="w-[155px] h-[25px]">
+            <img alt="customer-image" src="./images/customer-logo-2.png" class="w-[155px] h-[25px]">
+            <img alt="customer-image" src="./images/customer-logo-3.png" class="w-[155px] h-[25px]">
+            <img alt="customer-image" src="./images/customer-logo-4.png" class="w-[155px] h-[25px]">
+            <img alt="customer-image" src="./images/customer-logo-5.png" class="w-[155px] h-[25px]">
+            <img alt="customer-image" src="./images/customer-logo-6.png" class="w-[155px] h-[25px]">
+        </div>
+    </section>
+     
 </body>
 </html>
