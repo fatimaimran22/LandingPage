@@ -1,4 +1,4 @@
-# 🌐 Evolvo Landing Page Clone (Tailwind CSS)
+# 🌐 Evolo Landing Page Clone
 
 A responsive **HTML5 + Tailwind CSS landing page clone** built as part of my training at Devsinc.
 This project focuses on modern UI development using utility-first CSS.
