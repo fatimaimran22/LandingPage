@@ -44,6 +44,24 @@
                 }
             });
 
+            let index = 0;
+            const slider = document.getElementById("testimonialSlider");
+            const totalSlides = 3;
+
+            document.getElementById("next").onclick = () => {
+                index = (index + 1) % totalSlides;
+                updateSlider();
+            };
+
+            document.getElementById("prev").onclick = () => {
+                index = (index - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            };
+
+            function updateSlider() {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+
         });
     </script>
     <meta rel="icon" href="./images/logo.svg">
@@ -311,9 +329,53 @@
 
     <!-- Testimonials SEction -->
     <section id="Testimonials" class="md:bg-[url('./images/testimonials-background.jpg')] bg-cover bg-none my-[48px] py-[16px]">
-        <div class="flex flex-row justify-center max-w-[1440px] mx-auto">
-            <img src="./images//testimonials-2-men-talking.svg" class="w-[526px] h-[437px]">
-        </div>
+        <div class="flex flex-row justify-between px-[64px]">
+            <div class="flex flex-row">
+                <img src="./images/testimonials-2-men-talking.svg" class="w-[526px] h-[437px]">
+            </div>
+            <div class="pr-[100px] flex flex-row gap-[16px]">
+                <button id="prev" class="flex items-center">
+                    <img src="./images/prev.svg" class="w-[30px] h-[30px]">
+                </button>
+                <div class="overflow-hidden w-[500px]">
+                    <div id="testimonialSlider" class="flex transition-transform duration-500">
+                        <div class="flex flex-col min-w-full">
+                            <h1 class="text-black text-[32px] font-bold font-raleway mb-[8px] text-center">Testimonials</h1>
+                            <div class="flex justify-center mb-[16px]"><img alt="video" src="./images/testimonial-1.svg" class="w-[120.75px] h-[120.75px] rounded-md"></div>
+                            <p class="text-center text-[#6c757d] font-raleway text-[16px] mb-[16px] max-w-[483px] mx-auto">
+                                Love their services and was so amazed with the support and
+                                results that I purchased Evolo for two years in a row. They
+                                are awesome.
+                            </p>
+                            <h1 class="text-black text-[24px] font-semibold font-raleway mb-[8px] text-center">Roy Smith - Marketer</h1>
+                        </div>
+                        <div class="flex flex-col min-w-full">
+                            <h1 class="text-black text-[32px] font-bold font-raleway mb-[8px] text-center">Testimonials</h1>
+                            <div class="flex justify-center mb-[16px]"><img alt="video" src="./images/testimonial-2.svg" class="w-[120.75px] h-[120.75px] rounded-md"></div>
+                            <p class="text-center text-[#6c757d] font-raleway text-[16px] mb-[16px] max-w-[483px] mx-auto">
+                                Love their services and was so amazed with the support and
+                                results that I purchased Evolo for two years in a row. They
+                                are awesome.
+                            </p>
+                            <h1 class="text-black text-[24px] font-semibold font-raleway mb-[8px] text-center">Roy Smith - Marketer</h1>
+                        </div>
+                        <div class="flex flex-col min-w-full">
+                            <h1 class="text-black text-[32px] font-bold font-raleway mb-[8px] text-center">Testimonials</h1>
+                            <div class="flex justify-center mb-[16px]"><img alt="video" src="./images/testimonial-3.svg" class="w-[120.75px] h-[120.75px] rounded-md"></div>
+                            <p class="text-center text-[#6c757d] font-raleway text-[16px] mb-[16px] max-w-[483px] mx-auto">
+                                Love their services and was so amazed with the support and
+                                results that I purchased Evolo for two years in a row. They
+                                are awesome.
+                            </p>
+                            <h1 class="text-black text-[24px] font-semibold font-raleway mb-[8px] text-center">Roy Smith - Marketer</h1>
+                        </div>
+                    </div>
+                </div>
+                <button id="next" class="flex items-center">
+                    <img src="./images/next.svg" class="w-[30px] h-[30px]">
+                </button>
+            </div>
+        </div> 
     </section>
      
 </body>
