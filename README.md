@@ -7,7 +7,7 @@ This project focuses on modern UI development using utility-first CSS.
 
 ## 🚀 Live Demo
 
-🔗 https://641966407b2f526969131ba4--thunderous-granita-1a41d0.netlify.app/
+🔗 https://evolo-landing-page-mu.vercel.app/
 
 ---
 
